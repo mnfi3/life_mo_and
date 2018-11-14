@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".view.activity.ActivityLogin"
+    android:id="@+id/lyt_sign_up">
+
+
+
+    <include layout="@layout/toolbar_public"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp">
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginBottom="30sp"
+                    android:hint="email"
+                    android:drawableRight="@drawable/ic_email"
+                    android:drawablePadding="16sp"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/edt_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginBottom="30sp"
+                    android:hint="user_name"
+                    android:drawableRight="@drawable/ic_username"
+                    android:drawablePadding="16sp"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16sp"
+                    android:hint="password"
+                    android:drawableRight="@drawable/ic_lock"
+                    android:drawablePadding="16sp"
+                    android:inputType="textPassword"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_repeat_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16sp"
+                    android:hint="re-password"
+                    android:drawableRight="@drawable/ic_lock"
+                    android:drawablePadding="16sp"
+                    android:inputType="textPassword"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:layout_marginTop="8sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="show password"
+                    android:layout_marginRight="10sp"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/chk_show_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="24sp"/>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sign up"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/buttonsTextColor"
+                android:background="@drawable/back_buttons_public_ripple_effect"
+                android:textSize="@dimen/buttonsTextSize"/>
+
+
+
+            <ProgressBar
+                android:id="@+id/prg_sign_up"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

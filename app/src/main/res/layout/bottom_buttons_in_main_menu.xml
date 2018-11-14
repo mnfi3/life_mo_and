@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize"
+              android:padding="2dp"
+              android:background="#ddeeeeee"
+              android:layout_gravity="bottom"
+              app:layout_scrollFlags="snap"
+              android:id="@+id/lyt_bottom_buttons"
+    >
+
+
+    <ImageView
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_buttons_menu_ripple_effect"
+        android:padding="12dp"
+        android:src="@drawable/ic_login"
+        />
+
+    <ImageView
+        android:id="@+id/btn_explore"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_buttons_menu_ripple_effect"
+        android:padding="12dp"
+        android:src="@drawable/ic_explore"
+        />
+
+
+    <ImageView
+        android:id="@+id/btn_upload"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_buttons_menu_ripple_effect"
+        android:padding="10dp"
+        android:src="@drawable/ic_upload"
+        />
+
+    <ImageView
+        android:id="@+id/btn_saved"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_buttons_menu_ripple_effect"
+        android:padding="12dp"
+        android:src="@drawable/ic_saved"
+        />
+
+</LinearLayout>

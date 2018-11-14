@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="15dp"
+    >
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        app:riv_corner_radius="5dip"
+        />
+
+
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandableTextView:maxCollapsedLines="2"
+        expandableTextView:animDuration="300"
+        android:layout_marginBottom="2dp"
+        >
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:textSize="10sp"
+            tools:text="picture description"
+            android:textColor="#353535"
+            />
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_gravity="center|bottom"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="10dp"/>
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+
+
+
+
+
+
+
+</LinearLayout>

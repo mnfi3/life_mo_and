@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="3dp"
+              android:layout_marginBottom="30dp"
+              android:layout_marginRight="3dp"
+              android:layout_marginLeft="3dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        >
+
+
+
+
+        <Button
+            android:id="@+id/btn_remove_post_from_my"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="delete"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/buttonsTextColor"
+            android:background="@drawable/back_buttons_public_ripple_effect"
+            android:textSize="8dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="7dp"
+            android:drawableLeft="@drawable/ic_remove"
+            />
+
+
+
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        app:riv_corner_radius="10dip"
+        />
+
+
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandableTextView:maxCollapsedLines="2"
+        expandableTextView:animDuration="300"
+        >
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="5sp"
+            android:padding="20sp"
+            android:textSize="10sp"
+            tools:text="picture description"
+            android:textColor="#666666"
+            />
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_gravity="center|bottom"
+            android:background="@android:color/transparent"
+            />
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+
+    <TextView
+        android:id="@+id/txt_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp"
+        android:padding="4dp"
+        android:textSize="15dp"
+        tools:text="#tag1#tag2#tag3"
+        android:textStyle="bold"
+        android:textColor="#3030ff"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_margin="2dp"
+        >
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="saved  :"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textColor="#222222"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/txt_saved_count"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            tools:text="15"
+            android:textSize="10dp"
+            android:textColor="#222222"
+            android:textStyle="bold|italic"
+            />
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="shared  :"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textColor="#222222"
+            android:textStyle="bold|italic"/>
+
+
+        <TextView
+            android:id="@+id/txt_shared_count"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            tools:text="33"
+            android:textSize="10dp"
+            android:textColor="#222222"
+            android:textStyle="bold|italic"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#bcbcbc"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

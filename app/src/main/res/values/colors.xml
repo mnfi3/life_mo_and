@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryLight">#eceff1</color>
+    <color name="colorPrimary">#b0bec5</color>
+    <color name="colorPrimaryDark">#607d8b</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="searchInputBackground">#cccccc</color>
+    <color name="searchInputText">#aaaaaa</color>
+    <color name="postBackground">#ffffff</color>
+    <color name="tagBackground">#c2d0d7</color>
+    <color name="activityMainBackground">#eeeeee</color>
+    <color name="buttonsTextColor">#555555</color>
+
+</resources>
