@@ -6,10 +6,10 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-v4-24.1.1.aar/d528cda9bc8481cbddaf87b59c93403d/jars/libs/internal_impl-24.1.1.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../sdk/android-sdk-essential/extras/android/m2repository/com/android/support/support-v4/24.1.1/support-v4-24.1.1-javadoc.jar!/" />
+      <root url="jar://F:/dev2/sdk/android-sdk-essential/extras/android/m2repository/com/android/support/support-v4/24.1.1/support-v4-24.1.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../sdk/android-sdk-essential/extras/android/m2repository/com/android/support/support-v4/24.1.1/support-v4-24.1.1-sources.jar!/" />
+      <root url="jar://F:/dev2/sdk/android-sdk-essential/extras/android/m2repository/com/android/support/support-v4/24.1.1/support-v4-24.1.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

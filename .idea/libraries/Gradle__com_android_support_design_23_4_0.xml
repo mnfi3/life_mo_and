@@ -5,10 +5,10 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-23.4.0.aar/ac5056b4709fbbc48b55bdfd643f558e/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../sdk/android-sdk-essential/extras/android/m2repository/com/android/support/design/23.4.0/design-23.4.0-javadoc.jar!/" />
+      <root url="jar://F:/dev2/sdk/android-sdk-essential/extras/android/m2repository/com/android/support/design/23.4.0/design-23.4.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../sdk/android-sdk-essential/extras/android/m2repository/com/android/support/design/23.4.0/design-23.4.0-sources.jar!/" />
+      <root url="jar://F:/dev2/sdk/android-sdk-essential/extras/android/m2repository/com/android/support/design/23.4.0/design-23.4.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
