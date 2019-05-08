@@ -31,7 +31,7 @@ public class G extends Application {
   public static final String SALT_COPY="7c3d596ed03ab9116c547b0eb678b247";
 
   private static final String AES = "AES";
-  public static final String APP_NAME = "lifemo";
+  public static final String APP_NAME = "Lifemo";
 
   public static  boolean isLoggedIn = false;
 
