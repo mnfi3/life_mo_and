@@ -2,6 +2,7 @@ package com.farjami.mohsen.pinterest.view.activity;
 
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.Uri;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -97,8 +98,10 @@ public class ActivityLogin extends AppCompatActivity {
     txt_forget_password.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent intent = new Intent(ActivityLogin.this, ActivityRecoveryPassword.class);
-        startActivity(intent);
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(G.PASSWORD_RESET_URL));
+        startActivity(browserIntent);
+//        Intent intent = new Intent(ActivityLogin.this, ActivityRecoveryPassword.class);
+//        startActivity(intent);
       }
     });
 

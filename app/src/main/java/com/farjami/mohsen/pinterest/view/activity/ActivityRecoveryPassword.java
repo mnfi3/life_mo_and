@@ -1,6 +1,8 @@
 package com.farjami.mohsen.pinterest.view.activity;
 
+import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.Uri;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +19,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.farjami.mohsen.pinterest.R;
 import com.farjami.mohsen.pinterest.api_services.AccountApiService;
 import com.farjami.mohsen.pinterest.system.ConnectivityListener;
+import com.farjami.mohsen.pinterest.system.G;
 import com.farjami.mohsen.pinterest.view.my_views.MyViews;
 
 import org.json.JSONException;
@@ -63,32 +66,36 @@ public class ActivityRecoveryPassword extends AppCompatActivity {
     btn_recovery_password.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        if(!validEmail(edt_email.getText().toString())){
-          MyViews.makeText(ActivityRecoveryPassword.this,"your entered email not valid!", Toast.LENGTH_SHORT);
-          return;
-        }
 
-        String email = edt_email.getText().toString();
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(G.PASSWORD_RESET_URL));
+        startActivity(browserIntent);
 
-        AccountApiService apiService = new AccountApiService(ActivityRecoveryPassword.this);
-        JSONObject jsonObject = new JSONObject();
-        try {
-          jsonObject.put("email",email);
-        } catch (JSONException e) {
-          e.printStackTrace();
-        }
-        apiService.recoveryPassword(jsonObject, new AccountApiService.onRecoveryPasswordComplete() {
-          @Override
-          public void onChangePassword(int success) {
-            if(success == 1){
-              //txt_recovery_status.setText("new password sent to your email . please check your email");
-              MyViews.makeText(ActivityRecoveryPassword.this,"password sent to your email . please check your email",Toast.LENGTH_SHORT);
-              finish();
-            }else {
-              MyViews.makeText(ActivityRecoveryPassword.this,"your password recovery failed . please try again",Toast.LENGTH_SHORT);
-            }
-          }
-        });
+//        if(!validEmail(edt_email.getText().toString())){
+//          MyViews.makeText(ActivityRecoveryPassword.this,"your entered email not valid!", Toast.LENGTH_SHORT);
+//          return;
+//        }
+//
+//        String email = edt_email.getText().toString();
+//
+//        AccountApiService apiService = new AccountApiService(ActivityRecoveryPassword.this);
+//        JSONObject jsonObject = new JSONObject();
+//        try {
+//          jsonObject.put("email",email);
+//        } catch (JSONException e) {
+//          e.printStackTrace();
+//        }
+//        apiService.recoveryPassword(jsonObject, new AccountApiService.onRecoveryPasswordComplete() {
+//          @Override
+//          public void onChangePassword(int success) {
+//            if(success == 1){
+//              //txt_recovery_status.setText("new password sent to your email . please check your email");
+//              MyViews.makeText(ActivityRecoveryPassword.this,"password sent to your email . please check your email",Toast.LENGTH_SHORT);
+//              finish();
+//            }else {
+//              MyViews.makeText(ActivityRecoveryPassword.this,"your password recovery failed . please try again",Toast.LENGTH_SHORT);
+//            }
+//          }
+//        });
       }
     });
 

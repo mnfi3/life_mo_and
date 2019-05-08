@@ -101,6 +101,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/proguard-rules" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/reload-dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/resources" />
@@ -113,23 +114,17 @@
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:24.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.wang.avi:library-2.1.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.picasso:picasso:2.5.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.nineoldandroids:library:2.4.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.makeramen:roundedimageview-2.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.ms-square:expandableTextView-0.1.4" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-23.4.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:cardview-v7-23.4.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:24.1.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.squareup.picasso:picasso:2.5.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-23.4.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-23.4.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.volley:volley-1.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7-23.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.ms-square:expandableTextView-0.1.4" level="project" />
     <orderEntry type="library" name="Gradle: com.daimajia.slider:library-1.1.5" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4-24.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable-23.4.0" level="project" />
     <orderEntry type="library" name="Gradle: com.balysv:material-ripple-1.0.2" level="project" />
   </component>
 </module>

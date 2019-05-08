@@ -195,8 +195,7 @@ public class ActivityUpload extends AppCompatActivity {
 
 
 
-
-    rcv_all_tags.setLayoutManager((new LinearLayoutManager(ActivityUpload.this, LinearLayoutManager.HORIZONTAL, true)));
+//    rcv_all_tags.setLayoutManager((new LinearLayoutManager(ActivityUpload.this, LinearLayoutManager.HORIZONTAL, true)));
     rcv_all_tags.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.HORIZONTAL));
 
     PostsApiService apiService = new PostsApiService(ActivityUpload.this);
