@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.farjami.mohsen.pinterest.view.activity.ActivitySaved"
+    tools:context="net.lifemo.view.activity.ActivitySaved"
     android:id="@+id/lyt_my_posts">
 
 

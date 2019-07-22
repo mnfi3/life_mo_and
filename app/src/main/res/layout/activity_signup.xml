@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".view.activity.ActivityLogin"
+    tools:context="net.lifemo.view.activity.ActivityLogin"
     android:id="@+id/lyt_sign_up">
 
 

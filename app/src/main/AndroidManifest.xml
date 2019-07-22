@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.farjami.mohsen.pinterest">
+          package="net.lifemo">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -18,7 +18,7 @@
         android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".view.activity.ActivityMain"
+        <activity android:name="net.lifemo.view.activity.ActivityMain"
                   android:screenOrientation="portrait">
 
             <intent-filter>
@@ -28,37 +28,37 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.activity.ActivityLogin"
+        <activity android:name="net.lifemo.view.activity.ActivityLogin"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.activity.ActivitySignup"
+        <activity android:name="net.lifemo.view.activity.ActivitySignup"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.activity.ActivityShowPost"
+        <activity android:name="net.lifemo.view.activity.ActivityShowPost"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.activity.ActivityRecoveryPassword"
+        <activity android:name="net.lifemo.view.activity.ActivityRecoveryPassword"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.activity.ActivityUpload"
+        <activity android:name="net.lifemo.view.activity.ActivityUpload"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.activity.ActivitySearch"
+        <activity android:name="net.lifemo.view.activity.ActivitySearch"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.activity.ActivitySaved"
+        <activity android:name="net.lifemo.view.activity.ActivitySaved"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.activity.ActivityAccount"
+        <activity android:name="net.lifemo.view.activity.ActivityAccount"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.activity.ActivityChangePassword"
+        <activity android:name="net.lifemo.view.activity.ActivityChangePassword"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.activity.ActivityMyPosts"
+        <activity android:name="net.lifemo.view.activity.ActivityMyPosts"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.activity.ActivityUpTest"
+        <activity android:name="net.lifemo.view.activity.ActivityUpTest"
                   android:screenOrientation="portrait">
         </activity>
     </application>
